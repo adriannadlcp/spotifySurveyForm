@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Spotify</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <h1>Spotify Escucha</h1>
+        <p id="description"></p>
+        <form id="survey-form">
+            <label id="name-label">Nombre <input type="text" id="name" placeholder="Ingresa tu nombre"/>
+            </label>
+            <label id="email-label">Email <input type="email" id="email" placeholder="Ingresa tu correo electrónico"/>
+            </label>
+            <label id="number-label">Edad <input type="number" id="number" min="6" max="120"/>
+            </label>Género
+            <select id="dropdown">
+                <option value="1">Femenino</option>
+                <option value="2">Masculino</option>
+                <option value="3">No Binario</option>
+                <option value="4">Otro</option>
+            </select>
+            <label>Selecciona tu tipo de cuenta
+                <label>Free<input type="radio" name="account"/></label>
+                <label>Premium<input type="radio" name="account"/></label>
+            </label>
+            <label>Selecciona tus Planes Premium favoritos
+                <label><input type="checkbox" value="plan"/>Plan Individual</label>
+                <label><input type="checkbox" value="plan"/>Plan Dúo</label>
+                <label><input type="checkbox" value="plan"/>Plan Estudiantes</label>
+                <label><input type="checkbox" value="plan"/>Plan Familiar</label>
+            </label>
+            <label>Comentarios
+                <textarea placeholder="Escribenos tus comentarios" rows="10" cols="50"></textarea>
+            </label>
+            <button id="submit">Enviar</button>
+        </form>
+    </body>
+</html>
