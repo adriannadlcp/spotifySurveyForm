@@ -1,39 +1,41 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Spotify</title>
         <link rel="stylesheet" type="text/css" href="styles.css" />
     </head>
+    <header>
+        <img class="logo" src="/spotifySurveyForm/images/ab671c3d0000f4300111bfe6f62529c7a7be5577.png">
+    </header>
     <body>
-        <h1>Spotify Escucha</h1>
-        <p id="description"></p>
+        <h1 id="title">Spotify Escucha</h1>
+        <p id="description">¿Qué opinas de nuestras suscripciones Premium?</p>
         <form id="survey-form">
-            <label id="name-label">Nombre <input type="text" id="name" placeholder="Ingresa tu nombre"/>
+            <label id="name-label" class="question">Nombre <input type="text" id="name" placeholder="Ingresa tu nombre" required/>
             </label>
-            <label id="email-label">Email <input type="email" id="email" placeholder="Ingresa tu correo electrónico"/>
+            <label id="email-label" class="question">Email <input type="email" id="email" placeholder="Ingresa tu correo electrónico" required/>
             </label>
-            <label id="number-label">Edad <input type="number" id="number" min="6" max="120"/>
-            </label>Género
+            <label id="number-label" class="question">Edad <input type="number" id="number" min="6" max="120" required placeholder="Ingresa tu edad"/>
+            </label>
+            <label class="question">Género</label>
             <select id="dropdown">
-                <option value="1">Femenino</option>
-                <option value="2">Masculino</option>
-                <option value="3">No Binario</option>
-                <option value="4">Otro</option>
+                <option value="1">Seleccionar</option>
+                <option value="2">Femenino</option>
+                <option value="3">Masculino</option>
+                <option value="4">No Binario</option>
+                <option value="5">Otro</option>
             </select>
-            <label>Selecciona tu tipo de cuenta
-                <label>Free<input type="radio" name="account"/></label>
-                <label>Premium<input type="radio" name="account"/></label>
-            </label>
-            <label>Selecciona tus Planes Premium favoritos
-                <label><input type="checkbox" value="plan"/>Plan Individual</label>
-                <label><input type="checkbox" value="plan"/>Plan Dúo</label>
-                <label><input type="checkbox" value="plan"/>Plan Estudiantes</label>
-                <label><input type="checkbox" value="plan"/>Plan Familiar</label>
-            </label>
-            <label>Comentarios
+            <label class="options">Selecciona tu tipo de cuenta</label>
+                <label><input type="radio" name="account" value="1" class="fav"/>Free</label>
+                <label><input type="radio" name="account" value="2" class="fav"/>Premium</label>
+            <label class="options">Selecciona tus Planes Premium favoritos</label>
+                <label><input type="checkbox" value="plan" class="fav"/>Plan Individual</label>
+                <label><input type="checkbox" value="plan" class="fav"/>Plan Dúo</label>
+                <label><input type="checkbox" value="plan" class="fav"/>Plan Estudiantes</label>
+                <label><input type="checkbox" value="plan" class="fav"/>Plan Familiar</label>
+            <label class="comments">Comentarios</label>
                 <textarea placeholder="Escribenos tus comentarios" rows="10" cols="50"></textarea>
-            </label>
-            <button id="submit">Enviar</button>
+            <input id="submit" type="submit" value="ENVIAR"/>
         </form>
     </body>
 </html>
